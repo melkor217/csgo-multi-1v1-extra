@@ -61,7 +61,7 @@ public Action Event_RoundStart(Event ev, char[] name, bool dbc)
   RandSmg = GetRandomInt(1, 6);
   RandArmor = GetRandomInt(0, 1);
   RandHelmet = GetRandomInt(0, 1);
-  RandHeavy = GetRandomInt(1, 5);
+  RandHeavy = GetRandomInt(1, 6);
   RandAuto = GetRandomInt(1, 2);
   RandRifle = GetRandomInt(1, 7);
   RandPistol = GetRandomInt(1, 10);
@@ -70,7 +70,7 @@ public Action Event_RoundStart(Event ev, char[] name, bool dbc)
 
 public void SmgHandler(int client)
 {
-  if(RandHelmet)
+  if(RandHelmet && RandArmor)
   {
     Client_SetHelmet(client, true);
   }
@@ -142,6 +142,10 @@ public void HeavyHandler(int client)
     iWeapon = GivePlayerItem(client, "weapon_sawedoff");
   }
   else if (RandHeavy == 4)
+  {
+    iWeapon = GivePlayerItem(client, "weapon_mag7");
+  }
+  else if (RandHeavy == 5)
   {
     iWeapon = GivePlayerItem(client, "weapon_m249");
   }
