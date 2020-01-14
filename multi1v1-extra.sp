@@ -58,13 +58,14 @@ public void Multi1v1_OnRoundTypesAdded()
 
 public Action Event_RoundStart(Event ev, char[] name, bool dbc)
 {
-  RandSmg = GetRandomInt(1, 6);
   RandArmor = GetRandomInt(0, 1);
   RandHelmet = GetRandomInt(0, 1);
+  RandSmg = GetRandomInt(1, 6);
   RandHeavy = GetRandomInt(1, 6);
   RandAuto = GetRandomInt(1, 2);
   RandRifle = GetRandomInt(1, 7);
   RandPistol = GetRandomInt(1, 10);
+  LogError("Rand: %i %i %i %i %i %i %i", RandArmor, RandHelmet, RandSmg, RandHeavy, RandRifle, RandPistol);
 }
 
 
