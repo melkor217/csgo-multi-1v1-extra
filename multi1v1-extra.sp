@@ -65,7 +65,7 @@ public Action Event_RoundStart(Event ev, char[] name, bool dbc)
   RandAuto = GetRandomInt(1, 2);
   RandRifle = GetRandomInt(1, 7);
   RandPistol = GetRandomInt(1, 10);
-  LogError("Rand: %i %i %i %i %i %i %i", RandArmor, RandHelmet, RandSmg, RandHeavy, RandRifle, RandPistol);
+  LogError("Rand: %i %i %i %i %i %i %i", RandArmor, RandHelmet, RandSmg, RandHeavy, RandAuto, RandRifle, RandPistol);
 }
 
 
