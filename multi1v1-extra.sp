@@ -70,6 +70,7 @@ public Action Event_RoundStart(Event ev, char[] name, bool dbc)
 
 public void SmgHandler(int client)
 {
+  LogError("SMG");
   if(RandHelmet && RandArmor)
   {
     Client_SetHelmet(client, true);
@@ -125,6 +126,7 @@ public void SmgHandler(int client)
 
 public void HeavyHandler(int client)
 {
+  LogError("Heavy");
   Client_SetHelmet(client, true);
   Client_SetArmor(client, 100);
 
@@ -162,6 +164,7 @@ public void HeavyHandler(int client)
 
 public void AutoHandler(int client)
 {
+  LogError("Auto");
   Client_SetHelmet(client, true);
   Client_SetArmor(client, 100);
   int iWeapon = -1;
@@ -182,6 +185,7 @@ public void AutoHandler(int client)
 
 public void RifleHandler(int client)
 {
+  LogError("Rifle");
   Client_SetHelmet(client, true);
   Client_SetArmor(client, 100);
 
@@ -223,6 +227,7 @@ public void RifleHandler(int client)
 
 public void PistolHandler(int client)
 {
+  LogError("Pistol");
   if(RandHelmet && RandArmor)
   {
     Client_SetHelmet(client, true);
@@ -289,6 +294,7 @@ public void PistolHandler(int client)
 
 public void ScoutHandler(int client)
 {
+  LogError("Scout");
   Client_SetHelmet(client, true);
   Client_SetArmor(client, 100);
   int iWeapon = -1;
@@ -302,6 +308,7 @@ public void ScoutHandler(int client)
 
 public void DeagleHandler(int client)
 {
+  LogError("Deagle");
   Client_SetHelmet(client, true);
   Client_SetArmor(client, 100);
   int iWeapon = -1;
@@ -329,6 +336,7 @@ public void DeagleHandler(int client)
 
 public void KnifeHandler(int client)
 {
+  LogError("Knife");
   Client_SetHelmet(client, true);
   Client_SetArmor(client, 100);
   Multi1v1_GivePlayerKnife(client);
