@@ -209,7 +209,7 @@ public void RifleHandler(int client)
   }
   else if(RandRifle == 5)
   {
-    iWeapon = GivePlayerItem(client, "weapon_m4a4");
+    iWeapon = GivePlayerItem(client, "weapon_m4a1");
   }
   else if(RandRifle == 6)
   {
