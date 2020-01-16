@@ -361,11 +361,6 @@ public void DecoyHandler(int client)
   iWeapon = GivePlayerItem(client, "weapon_decoy");
   iWeapon = GivePlayerItem(client, "weapon_decoy");
   iWeapon = GivePlayerItem(client, "weapon_decoy");
-  iWeapon = GivePlayerItem(client, "weapon_decoy");
-  iWeapon = GivePlayerItem(client, "weapon_decoy");
-  iWeapon = GivePlayerItem(client, "weapon_decoy");
-  iWeapon = GivePlayerItem(client, "weapon_decoy");
-  iWeapon = GivePlayerItem(client, "weapon_decoy");
   if(iWeapon != -1)
   {
     EquipPlayerWeapon(client, iWeapon);
@@ -382,7 +377,6 @@ public void ZeusHandler(int client)
   iWeapon = GivePlayerItem(client, "weapon_flashbang");
   iWeapon = GivePlayerItem(client, "weapon_hegrenade");
   iWeapon = GivePlayerItem(client, "weapon_hegrenade");
-  iWeapon = GivePlayerItem(client, "weapon_incgrenade");
   iWeapon = GivePlayerItem(client, "weapon_molotov");
   iWeapon = GivePlayerItem(client, "weapon_smokegrenade");
   iWeapon = GivePlayerItem(client, "weapon_taser");
