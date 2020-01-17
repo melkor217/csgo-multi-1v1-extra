@@ -52,8 +52,8 @@ public void Multi1v1_OnRoundTypesAdded()
   Multi1v1_AddRoundType("Auto Sniper", "autosniper", AutoHandler, true, false, "", true);
   /* Multi1v1_AddRoundType("Deagle+500HP", "deagle500", Deagle500Handler, true, false, "", true); */
   Multi1v1_AddRoundType("Knife", "knife", KnifeHandler, true, false, "", true);
-  Multi1v1_AddRoundType("Zeus+Nades", "zeus", ZeusHandler, true, false, "", true);
-  Multi1v1_AddRoundType("Decoy", "decoy", DecoyHandler, true, false, "", true);
+  /* Multi1v1_AddRoundType("Zeus+Nades", "zeus", ZeusHandler, true, false, "", true); */
+  /* Multi1v1_AddRoundType("Decoy", "decoy", DecoyHandler, true, false, "", true); */
 }
 
 public Action Event_RoundStart(Event ev, char[] name, bool dbc)
